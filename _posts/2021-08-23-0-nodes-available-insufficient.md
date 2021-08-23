@@ -1,7 +1,7 @@
 ---
 title: "0/1NodesAvailable:InsufficientCpuInsufficientMemory"
 layout: page
-catagories: "kubernetes"
+catagories: kubernetes
 
 ---
 
