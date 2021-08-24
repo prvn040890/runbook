@@ -1,0 +1,24 @@
+- title: Home
+  url: /
+
+- title: Kubernetes
+  url: /kubernetes.html
+
+- title: Consul
+  url: /consul/
+
+- title: Vault
+  url: /vault/
+
+- title: Terraform
+  url: /terraform/
+
+- title: Tools
+  url: /tools/
+  sublinks:
+    - title: Drone
+      url: /tools/drone/
+    - title: Harbour
+      url: /tools/harbour/
+    - title: Argo
+      url: /tools/argo/

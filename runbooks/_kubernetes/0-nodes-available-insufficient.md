@@ -1,6 +1,6 @@
 ---
 title: "0/1NodesAvailable:InsufficientCpuInsufficientMemory"
-layout: page
+layout: posts
 categories: kubernetes
 
 ---

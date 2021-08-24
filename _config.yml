@@ -35,6 +35,23 @@ plugins:
   - jekyll-feed
 
 permalink: /:categories/:title
+collections_dir: runbooks
+
+
+collections:
+  runbooks:
+    output: true
+    directory: runbooks
+    permalink: /:collection/:path
+  kubernetes:
+    output: true
+    directory: runbooks/_kubernetes 
+    permalink: /:collection/:path
+  jekyll:
+    output: true
+    directory: runbooks/_jekyll 
+    permalink: /:collection/:path
+  
 
 # Exclude from processing.
 # The following items will not be processed, by default.
