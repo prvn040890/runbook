@@ -17,8 +17,8 @@
   url: /tools.html
   sublinks:
     - title: Drone
-      url: /tools/drone/
+      url: /drone.html
     - title: Harbour
-      url: /tools/harbour/
+      url: /harbour.html
     - title: Argo
-      url: /tools/argo/
+      url: /argo.html

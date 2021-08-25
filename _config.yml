@@ -19,14 +19,13 @@
 # in the templates via {{ site.myvariable }}.
 
 title: RunBooks
+author: ECP-Platform-OPS-Team
 email: prvn.040890@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Step by step procedure to trouble shoot ECP Environment
 domain: prvn040890.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 url: https://prvn040890.github.io  # the base hostname and protocol for your site, e.g. http://example.com
-baseurl: /runbook     # place folder name if the site is served in a subfolder
+baseurl: /runbook    # place folder name if the site is served in a subfolder
 
 
 # Build settings
@@ -34,22 +33,37 @@ theme: minima
 plugins:
   - jekyll-feed
 
-permalink: /:categories/:title
 collections_dir: runbooks
 
 
 collections:
-  runbooks:
-    output: true
-    directory: runbooks
-    permalink: /:collection/:path
   kubernetes:
     output: true
     directory: runbooks/_kubernetes 
     permalink: /:collection/:path
-  jekyll:
+  consul:
     output: true
-    directory: runbooks/_jekyll 
+    directory: runbooks/_consul
+    permalink: /:collection/:path
+  vault:
+    output: true
+    directory: runbooks/_vault
+    permalink: /:collection/:path
+  terraform:
+    output: true
+    directory: runbooks/_terraform
+    permalink: /:collection/:path
+  drone:
+    output: true
+    directory: runbooks/_tools/_drone
+    permalink: /:collection/:path
+  harbour:
+    output: true
+    directory: runbooks/_tools/_harbour
+    permalink: /:collection/:path
+  argo:
+    output: true
+    directory: runbooks/_tools/_argo
     permalink: /:collection/:path
   
 

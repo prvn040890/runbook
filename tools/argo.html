@@ -4,10 +4,10 @@ layout: page
 
 <div class="home">
 
-    {%- if site.kubernetes.size > 0 -%}
+    {%- if site.tools.argo.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Runbooks" }}</h2>
     <ul class="post-list">
-        {%- for collection in site.kubernetes -%}
+        {%- for collection in site.tools.argo -%}
         <li>
             <h3>
                 <a class="post-link" href="{{ collection.url | relative_url }}">
@@ -22,4 +22,4 @@ layout: page
     </ul>
     {%- endif -%}
 
-</div> 
+</div>

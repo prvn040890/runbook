@@ -2,24 +2,21 @@
 layout: page
 ---
 
-<div class="home">
+<div class="consul">
 
-    {%- if site.kubernetes.size > 0 -%}
+    {%- if site.consul.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Runbooks" }}</h2>
     <ul class="post-list">
-        {%- for collection in site.kubernetes -%}
+        {%- for collection in site.consul -%}
         <li>
             <h3>
                 <a class="post-link" href="{{ collection.url | relative_url }}">
                     {{ collection.title | escape }}
                 </a>
             </h3>
-            {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-            {%- endif -%}
         </li>
         {%- endfor -%}
     </ul>
     {%- endif -%}
 
-</div> 
+</div>
