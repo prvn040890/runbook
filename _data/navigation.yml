@@ -5,16 +5,16 @@
   url: /kubernetes.html
 
 - title: Consul
-  url: /consul/
+  url: /consul.html
 
 - title: Vault
-  url: /vault/
+  url: /vault.html
 
 - title: Terraform
-  url: /terraform/
+  url: /terraform.html
 
 - title: Tools
-  url: /tools/
+  url: /tools.html
   sublinks:
     - title: Drone
       url: /tools/drone/
