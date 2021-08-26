@@ -15,10 +15,3 @@
 
 - title: Tools
   url: /tools.html
-  sublinks:
-    - title: Drone
-      url: /drone.html
-    - title: Harbour
-      url: /harbour.html
-    - title: Argo
-      url: /argo.html

@@ -55,15 +55,19 @@ collections:
     permalink: /:collection/:path
   drone:
     output: true
-    directory: runbooks/_tools/_drone
+    directory: runbooks/_tools/drone
     permalink: /:collection/:path
   harbour:
     output: true
-    directory: runbooks/_tools/_harbour
+    directory: runbooks/_tools/harbour
     permalink: /:collection/:path
   argo:
     output: true
-    directory: runbooks/_tools/_argo
+    directory: runbooks/_tools/argo
+    permalink: /:collection/:path
+  tools:
+    output: true
+    directory: runbooks/_tools
     permalink: /:collection/:path
   
 
