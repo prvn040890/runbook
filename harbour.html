@@ -3,26 +3,20 @@ layout: page
 ---
 
 <div class="home">
-    {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-    {%- endif -%}
 
-    {{ content }}
-
-    {%- if site.harbour.size > 0 -%}
+    {%- if site.tools.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Runbooks" }}</h2>
     <ul class="post-list">
-        {%- for collection in site.harbour -%}
+        {%- for collection in site.tools -%}
+        {%- if collection.type == 'harbour' -%}
         <li>
             <h3>
                 <a class="post-link" href="{{ collection.url | relative_url }}">
                     {{ collection.title | escape }}
                 </a>
             </h3>
-            {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-            {%- endif -%}
         </li>
+        {%- endif -%}
         {%- endfor -%}
     </ul>
     {%- endif -%}

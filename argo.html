@@ -4,22 +4,21 @@ layout: page
 
 <div class="home">
 
-    {%- if site.tools.argo.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Runbooks" }}</h2>
-    <ul class="post-list">
-        {%- for collection in site.tools.argo -%}
-        <li>
-            <h3>
-                <a class="post-link" href="{{ collection.url | relative_url }}">
-                    {{ collection.title | escape }}
-                </a>
-            </h3>
-            {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-            {%- endif -%}
-        </li>
-        {%- endfor -%}
-    </ul>
+    {%- if site.tools.size > 0 -%}
+        <h2 class="post-list-heading">{{ page.list_title | default: "Runbooks" }}</h2>
+        <ul class="post-list">
+            {%- for collection in site.tools -%}
+                {%- if collection.type == 'argo' -%}
+                    <li>
+                        <h3>
+                            <a class="post-link" href="{{ collection.url | relative_url }}">
+                                {{ collection.title | escape }}
+                            </a>
+                        </h3>
+                    </li>
+                {%- endif -%}
+            {%- endfor -%}
+        </ul>
     {%- endif -%}
 
 </div>

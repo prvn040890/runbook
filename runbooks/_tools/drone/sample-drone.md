@@ -1,7 +1,8 @@
 ---
 title: "sample-drone"
 layout: post
-categories: tools drone
+categories: tools
+type: drone
 
 ---
 ## Overview {#overview}

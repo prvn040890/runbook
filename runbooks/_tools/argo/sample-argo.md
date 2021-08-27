@@ -1,7 +1,8 @@
 ---
 title: "sample-argo"
 layout: post
-categories: tools argo
+categories: tools
+type: argo
 
 ---
 ## Overview {#overview}

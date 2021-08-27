@@ -4,20 +4,19 @@ layout: page
 
 <div class="home">
 
-    {%- if site.tools.drone.size > 0 -%}
+    {%- if site.tools.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Runbooks" }}</h2>
     <ul class="post-list">
-        {%- for collection in site.tools.drone -%}
+        {%- for collection in site.tools -%}
+        {%- if collection.type == 'drone' -%}
         <li>
             <h3>
                 <a class="post-link" href="{{ collection.url | relative_url }}">
                     {{ collection.title | escape }}
                 </a>
             </h3>
-            {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-            {%- endif -%}
         </li>
+        {%- endif -%}
         {%- endfor -%}
     </ul>
     {%- endif -%}

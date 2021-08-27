@@ -1,7 +1,8 @@
 ---
 title: "sample-harbour"
 layout: post
-categories: tools harbour
+categories: tools
+type: harbour
 
 ---
 ## Overview {#overview}
